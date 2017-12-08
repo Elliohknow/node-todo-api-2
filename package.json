@@ -1,11 +1,12 @@
 {
   "name": "node-todo-api",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node server/server.js",
-    "test": "mocha server/**/*.test.js",
-    "test-watch": "nodemon --exec 'npm test'"
+    "test": "SET NODE_ENV=test && mocha server/**/*.test.js || export NODE_ENV=test && mocha server/**/*.test.js",
+    "test-watch": "nodemon --exec \"npm test\"" 
   },
   "engines": {
     "node": "8.4.0"
@@ -32,6 +33,5 @@
   "bugs": {
     "url": "https://github.com/Elliohknow/node-todo-api-2/issues"
   },
-  "homepage": "https://github.com/Elliohknow/node-todo-api-2#readme",
-  "description": ""
+  "homepage": "https://github.com/Elliohknow/node-todo-api-2#readme"
 }
