@@ -81,11 +81,6 @@ UserSchema.pre('save', function (next) {
 				console.log(hash);
 			});
 		});
-		
-		//user.password
-		
-		//user.password = hash;
-		//next()
 	} else {
 		next();
 	}
